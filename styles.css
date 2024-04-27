@@ -1,0 +1,584 @@
+.container {  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "iphone iphone learn-more learn-more"
+    "keyboard remote remote floppy"
+    "conrollar ipad ipad floppy"
+    "twitter popular tv tv";
+}
+
+body{
+  margin: 0;
+}
+
+a {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+}
+
+/*--------- item 1 -----------*/
+
+.iphone {
+  grid-area: iphone;  
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  justify-content: space-around;
+}
+
+.iphone img{
+  width: 250px;
+  display: block;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.iphone .iphoneContent{
+  align-self: center;
+  justify-self: center;
+  width: 30%;
+}
+
+.iphone p{
+  color: rgb(159, 163, 167);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: Montserrat , sans-serif;
+}
+
+.iphone h3{
+  color: rgb(51, 51, 51);
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: Arvo, sans-serif;
+}
+
+/*---------- item 2 -------------*/
+
+.learn-more {
+  grid-area: learn-more; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+  justify-content: space-around;
+  background-color: #f7f8f9;
+  text-align: center;
+}
+
+.learn-more p{
+  color: rgb(159, 163, 167);
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: Montserrat , sans-serif;
+}
+
+.learn-more h1{
+  color: rgb(51, 51, 51);
+  font-size: 48px;
+  line-height: 60px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-family: Arvo, sans-serif;
+}
+
+.learn-more a{
+  color: rgb(42, 158, 179);
+  text-decoration: underline;
+}
+
+/*-------- item 3 ---------*/
+
+.keyboard { 
+  grid-area: keyboard; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: auto;
+  background-color: #f05638;
+  text-align: center;
+}
+
+.keyboard img{
+  max-width: 100%;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 48px;
+}
+
+.keyboard h3{
+  color: rgb(255, 251, 251);
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  font-family: Arvo, sans-serif;
+}
+
+.keyboard a{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffc80a;
+  font-family: "Open Sans", sans-serif ;
+  line-height: 26px;
+}
+
+/*-------- item 4 ---------*/
+
+
+.remote { 
+  grid-area: remote; 
+  display: flex;
+  padding-top: 68px;
+  padding-right: 20px;
+  padding-left: 20px;
+  justify-content: space-around;
+  overflow: hidden;
+}
+
+.left {
+  width: 30%;
+  align-self: end;
+  position: relative;
+}
+
+.right {
+  width: 40%;
+}
+
+.left img {
+  position: relative;
+  left: -170%;
+  width: 250%;
+  max-width: none;
+  margin-top: 20px;
+  display: block;
+}
+
+.left h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.left p {
+  font-family: Montserrat, sans-serif;
+  color: #9fa3a7;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.right{
+  align-items: center;
+}
+
+.right p {
+  color: #9fa3a7;
+}
+
+.right a{
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(51, 51, 51) ;
+  font-family: "Open Sans", sans-serif ;
+  line-height: 26px;
+}
+
+/*---------- item 5 ---------*/
+
+.floppy { 
+  grid-area: floppy; 
+  background-color: #8F76BC;
+  padding: 30px 5% 70px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #8f76bc;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.top {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #8166b0;
+  flex-direction: column;
+}
+
+.top img {
+  width: 65%;
+  margin: 20px;
+}
+
+.top .popular {
+  display: flex;
+  margin: 0;
+  align-items: center;
+  background-color: #8B72B6;
+  border-radius: 60px;
+  padding: 3px 6px;
+}
+
+.popular p {
+  font-size: 10px;
+  line-height: 23px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  padding-left: 5px;
+  margin: 0;
+  font-family: "Open Sans", sans-serif  ;
+}
+
+.fa-flag {
+  color: yellow;
+}
+
+
+.bottom {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bottom h2 {
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
+  font-family: Arvo, sans-serif;
+  margin-bottom: 5px;
+}
+
+.bottom p {
+  width: 80%;
+  justify-self: center;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif  ;
+  color: white;
+}
+
+.bottom button{
+  letter-spacing: 2.4px;
+  text-transform: uppercase;
+  color: black;
+  margin-top: 30px;
+  padding: 14px 28px;
+  border-radius: 50px;
+  background-color: #ffc80a ;
+  font-family: "Open Sans", sans-serif  ;
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 12px;
+  border: none;
+}
+
+/*----------- item 6 ---------*/
+
+.conrollar { 
+  grid-area: conrollar;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+
+.conrollar img {
+  width: 80%;
+  position: relative;
+  left: -7%;
+}
+
+.conrollar h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif ;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  width: 54%;
+  text-align: center;
+  color: rgb(51, 51, 51);
+}
+
+.conrollar a{
+  color: rgb(39, 185, 194);
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif ;
+  line-height: 26px;
+}
+
+/*------- item 7 --------*/
+
+.ipad { 
+  grid-area: ipad; 
+  background-color: #93B6B7;
+  padding-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  padding-bottom: 0;
+  text-align: center;
+  background-image: url(img/ux-back.png);
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.ipad img {
+  width: 90%;
+  position: relative;
+  left: -12%;
+}
+
+.ipad h3 {
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.minitxt {
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #fa684f;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Open Sans", sans-serif  ;
+}
+
+/*------ item 8 --------*/
+
+.twitter { 
+  grid-area: twitter; 
+  background-color: #38D5F4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.circle {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #35CFED;
+  flex-direction: column;
+}
+
+.circle h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family:Arvo, sans-serif  ;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: white;
+}
+
+.circle i {
+  width: 100%;
+  font-size: 70px;
+  color: #ffc80a;
+}
+
+/*------ item 9 --------*/
+
+.popular { 
+  grid-area: popular; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.minitxt2 {
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: #7BC424;
+  font-size: 8px;
+  line-height: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: white;
+  font-family: "Open Sans", sans-serif  ;
+}
+
+.popular h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+/*------- item 10 --------*/
+
+.tv { 
+  grid-area: tv; 
+  background-color: #2C2C2C;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding-right: 5%;
+  padding-left: 5%;
+  align-items: center;
+}
+
+.tv h3 {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: Arvo, sans-serif;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 400;
+  color: white;
+  width: 30%;
+}
+
+.tv img {
+  width: 48%;
+  position: relative;
+  left: -10%;
+  top: -15px;
+}
+
+/*-------- media screen --------*/
+
+@media (max-width: 991px) {
+  .container {
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          'learn-more learn-more'
+          'iphone iphone'
+          'keyboard conrollar'
+          'remote remote'
+          'twitter floppy'
+          'twitter floppy'
+          'ipad floppy'
+          'popular popular'
+          'tv tv';
+  }
+
+  .remote {
+      overflow: visible;
+  }
+
+  .popular {
+      margin: 20px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto auto auto auto auto auto auto auto auto;
+      grid-template-areas:
+          'learn-more'
+          'iphone'
+          'keyboard'
+          'conrollar'
+          'remote'
+          'twitter'
+          'ipad'
+          'floppy'
+          'popular'
+          'tv';
+  }
+
+  .iphone {
+      padding-bottom: 0;
+  }
+
+  .iphoneContent {
+      align-items: start;
+      text-align: left;
+  }
+
+  .iphone img {
+      margin: 10px 0 0 0;
+      padding-bottom: 0;
+  }
+
+  .remote img {
+      position: relative;
+      left: -60%;
+      width: 200%;
+      margin-top: 40px;
+  }
+
+  .ipad {
+      padding-bottom: 0;
+  }
+
+  .center {
+      text-align: center;
+  }
+
+  .top{
+    width: 100%;
+  }
+
+}
